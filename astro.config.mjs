@@ -8,13 +8,17 @@ import icon from "astro-icon"
 import metaTags from "astro-meta-tags"
 import { defineConfig } from "astro/config"
 
+import vercel from "@astrojs/vercel"
+
 export default defineConfig({
 	site: "https://lpmotortest.com",
 	base: "/",
+
 	prefetch: {
 		defaultStrategy: "viewport",
 		prefetchAll: true,
 	},
+
 	integrations: [
 		mdx(),
 		keystatic(),
@@ -28,5 +32,7 @@ export default defineConfig({
 		metaTags(),
 		react(),
 	],
+
 	output: "static",
+	adapter: vercel(),
 })
