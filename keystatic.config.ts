@@ -10,7 +10,7 @@ export default config({
 		kind: "cloud",
 	},
 	cloud: {
-		project: "rsg-valve/rsg-valve-kz",
+		project: "rsg-valve/rsg-valve",
 	},
 	// storage: {
 	// 	kind: "local",
