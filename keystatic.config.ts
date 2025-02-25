@@ -6,17 +6,15 @@ export default config({
 	// storage: {
 	// 	kind: "cloud",
 	// },
-	// cloud: {
-	// 	project: "rsg-valve/rsg-valve-kz",
-	// },
-	// storage: {
-	// 	kind: "github",
-	// 	repo: "proxima812/rsg-valve-kz",
-	// },
-
 	storage: {
-		kind: "local",
+		kind: "cloud",
 	},
+	cloud: {
+		project: "rsg-valve/rsg-valve-kz",
+	},
+	// storage: {
+	// 	kind: "local",
+	// },
 	collections: {
 		products,
 		pages,
