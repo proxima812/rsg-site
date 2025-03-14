@@ -6,15 +6,15 @@ export default config({
 	// storage: {
 	// 	kind: "cloud",
 	// },
-	storage: {
-		kind: "cloud",
-	},
-	cloud: {
-		project: "rsg-valve/rsg-valve",
-	},
 	// storage: {
-	// 	kind: "local",
+	// 	kind: "cloud",
 	// },
+	// cloud: {
+	// 	project: "rsg-valve/rsg-valve",
+	// },
+	storage: {
+		kind: "local",
+	},
 	collections: {
 		products,
 		pages,
