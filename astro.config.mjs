@@ -8,10 +8,10 @@ import icon from "astro-icon"
 import metaTags from "astro-meta-tags"
 import { defineConfig } from "astro/config"
 
-import vercel from "@astrojs/vercel"
+import cloudflare from "@astrojs/cloudflare"
 
 export default defineConfig({
-	site: "https://lpmotortest.com",
+	site: "https://rsg-valve.kz",
 	base: "/",
 
 	prefetch: {
@@ -34,5 +34,5 @@ export default defineConfig({
 	],
 
 	output: "static",
-	adapter: vercel(),
+	adapter: cloudflare(),
 })
