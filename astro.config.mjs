@@ -12,13 +12,10 @@ import cloudflare from "@astrojs/cloudflare"
 
 export default defineConfig({
 	site: "https://rsg-valve.kz",
-	base: "/",
-
 	prefetch: {
 		defaultStrategy: "viewport",
 		prefetchAll: true,
 	},
-
 	integrations: [
 		mdx(),
 		keystatic(),
