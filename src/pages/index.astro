@@ -4,6 +4,8 @@ import ProductCard from "@/components/ProductCard.astro"
 import Layout from "@/layouts/Layout.astro"
 import { getCollection } from "astro:content"
 
+export const prerender = true
+
 const cards = [
 	{
 		title: "Контроль качества на всех этапах",
@@ -171,7 +173,7 @@ const products = await getCollection("products")
 		>
 	</div>
 
-<div class="flex gap-12 md:flex-row flex-col items-center">
+	<div class="flex gap-12 md:flex-row flex-col items-center">
 		<script
 			type="text/javascript"
 			charset="utf-8"
