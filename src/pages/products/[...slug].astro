@@ -12,6 +12,8 @@ export async function getStaticPaths() {
 }
 const post = Astro.props
 const { Content } = await render(post)
+
+export const prerender = true
 ---
 
 <Layout {...post.data} type ogImage={post.data.ogImage?.src}>
