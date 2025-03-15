@@ -8,14 +8,16 @@ import icon from "astro-icon"
 import metaTags from "astro-meta-tags"
 import { defineConfig } from "astro/config"
 
-import cloudflare from "@astrojs/cloudflare"
+import netlify from "@astrojs/netlify"
 
 export default defineConfig({
 	site: "https://rsg-valve.kz",
+
 	prefetch: {
 		defaultStrategy: "viewport",
 		prefetchAll: true,
 	},
+
 	integrations: [
 		mdx(),
 		keystatic(),
@@ -30,6 +32,6 @@ export default defineConfig({
 		react(),
 	],
 
-	output: "server",
-	adapter: cloudflare(),
+	output: "static",
+	adapter: netlify(),
 })
